@@ -37,8 +37,6 @@ export function LoginForm({onLoginSubmit}){
 
     return (
       <div id="id01" class="modal">
-        <span onclick="document.getElementById('id01').style.display='none'"
-        class="close" title="Close Modal">&times;</span>
         <form class="modal-content animate" onSubmit={handleLoginSubmit}>
         <div class="container">
           <label>Username </label>

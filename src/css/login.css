@@ -1,11 +1,11 @@
 /* Bordered form */
 form {
-    align-content: center;
-    align-self: center;
     width: 100px;
+    height: auto;
     border: 3px solid black;
+
   }
-  
+
   /* Full-width inputs */
   input[type=text], input[type=password] {
     width: 100%;
