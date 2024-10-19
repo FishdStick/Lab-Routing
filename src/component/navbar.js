@@ -1,14 +1,17 @@
 import "../css/navbar.css"
 import React from 'react';
+import {NavLink} from 'react-router-dom'
 
 export function NavBar(){
     return (
     <div>
-        {/* <ul>
-            <li><a className="active" href="/">Home</a></li>
-            <li><a href="/">About Us</a></li>
-            <li><a href="/">Contact</a></li>
-        </ul> */}
+              <nav>
+                <ul>
+                  <li><NavLink to="/">Home</NavLink></li>
+                  <li><NavLink to="/about-us">About Us</NavLink></li>
+                  <li><NavLink to="/contact">Contact</NavLink></li>
+                </ul>
+              </nav>
     </div>
     )
 }

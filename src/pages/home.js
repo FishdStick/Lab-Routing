@@ -11,20 +11,6 @@ export function Home(){
     return (
         <div>
             <Title /> 
-            <BrowserRouter>
-                <nav class="">
-                    <NavLink to="/">Home</NavLink>
-                    <NavLink to="/about-us">About Us</NavLink>
-                    <NavLink to="/contact">Contact</NavLink>
-                </nav>
-      
-                <Routes>
-                    <Route path="/" element = {<Home />} />
-                    <Route path="/about-us" element = {<AboutUs />} />              
-                    <Route path="/*" element={<Navigate to="/"/> }/>       
-               </Routes>
-      
-             </BrowserRouter>
             <Body />
         </div>
     )

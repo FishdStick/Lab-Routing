@@ -1,0 +1,58 @@
+/* Ensure the container uses full available width */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  max-width: 1000px; /* Set a max-width so it's not too wide */
+  width: 100%; /* Full width */
+  margin: 0 auto; /* Center the form */
+}
+
+/* Style inputs with type="text", select elements and textareas */
+.contact-text {
+  max-width: auto; /* Full width */
+  padding: 12px; /* Some padding */
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical; /* Allow vertical resize */
+  height: auto; /* Allow height to adjust */
+  min-height: 50px; /* Add a minimum height for inputs */
+}
+
+textarea.contact-text {
+  width:auto;
+  height: 200px; /* Set height for textarea */
+  min-height: 100px; /* Ensure textarea has a minimum height */
+}
+
+/* Style the submit button */
+.contact-submit {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%; /* Make the button fill the width */
+}
+
+/* Submit button hover state */
+.contact-submit:hover {
+  background-color: #45a049;
+}
+
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  width:auto;
+  border-color: #f2f2f2;
+}
+
+.contact-label{
+  text-align: left;
+  font-weight: bold;
+}

@@ -38,25 +38,29 @@ export function LoginForm({onLoginSubmit}){
     return (
       <div id="id01" class="modal">
         <form class="modal-content animate" onSubmit={handleLoginSubmit}>
-        <div class="container">
+        <div class="login-container">
+          <h1>Login</h1>
           <label>Username </label>
           <input
+            className="login-text"
             type="text"
             value={username}
             onChange={(e) => setUname(e.target.value)}
             required
           />
         </div>
-        <div>
+        <div class="login-container">
           <label>Password</label>
           <input
+            className="login-text"
             type="password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
             required
           />
+
+          <button type="submit">Login</button>
         </div>
-        <button type="submit">Login</button>
       </form>
       </div>
     );
