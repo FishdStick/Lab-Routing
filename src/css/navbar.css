@@ -1,3 +1,4 @@
+
 ul {
     list-style-type: none;
     margin: 0;
@@ -6,24 +7,24 @@ ul {
     background-color:black;
   }
   
-  li {
-    font-weight: bold;
-    float: left;
-  }
-  
-  li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  
-  /* Change the link color to #111 (black) on hover */
-  li a:hover {
-    background-color: grey;
-  }
+li {
+  font-weight: bold;
+  float: left;
+}
 
-  .active {
-    background-color: #04AA6D;
-  }
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: grey;
+}
+
+.active {
+  background-color: #04AA6D;
+}

@@ -1,10 +1,11 @@
-import logo from './logo.svg';
 import './App.css';
-import {Body} from "./component/body";
-import {Title} from "./component/title";
-import {NavBar} from "./component/navbar";
 import {LoginForm} from "./component/login-form";
+import { NavBar } from './component/navbar';
 import { useState } from 'react';
+// import { BrowserRouter, Route, Routes, NavLink, Redirect, Link,Navigate } from 'react-router-dom'
+
+import {Home} from "./pages/home";
+import {AboutUs} from "./pages/about-us";
 
 function App() {
 
@@ -14,9 +15,27 @@ function App() {
     setIsLoggedIn(true);
   }
 
+  // change this to routing
+  // display home page
   return (
     <div className="App">
-        {isLoggedIn ? <><Title /> <NavBar /> <Body /></> : <LoginForm onLoginSubmit={handleLogin}  />}
+        {isLoggedIn ? Home()
+            //   <BrowserRouter>
+            //   <nav class="">
+            //     <NavLink to="/">Home</NavLink>
+            //     <NavLink to="/about-us">About Us</NavLink>
+            //     <NavLink to="/contact">Contact</NavLink>
+            //   </nav>
+      
+            //   <Routes>
+            //     <Route path="/" element = {<Home />} />
+            //     <Route path="/about-us" element = {<AboutUs />} />              
+            //     <Route path="/*" element={<Navigate to="/"/> }/>       
+            //   </Routes>
+      
+            // </BrowserRouter>
+            
+        : <LoginForm onLoginSubmit={handleLogin}  />}
     </div>
   );
 }
